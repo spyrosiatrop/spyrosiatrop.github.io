@@ -1,0 +1,26 @@
+{
+  "leadingPapers": [
+    {
+      "title": "Hamstring muscle injuries in athletics",
+      "authors": ["Spyridon A. Iatropoulos", "Patrick C. Wheeler"],
+      "year": 2023,
+      "journal": "The Physician and Sportsmedicine",
+      "doi": "https://doi.org/10.1080/00913847.2023.2188871",
+      "pdf": "papers/leading/Iatropoulos & Wheeler (2023) Hamstring muscle injuries in athletics.pdf", 
+      "code": null,
+      "bibtex": "@article{Iatropoulos_2023, title={Hamstring muscle injuries in athletics}, volume={52}, ISSN={2326-3660}, url={http://dx.doi.org/10.1080/00913847.2023.2188871}, DOI={10.1080/00913847.2023.2188871}, number={2}, journal={The Physician and Sportsmedicine}, publisher={Informa UK Limited}, author={Iatropoulos, Spyridon A. and Wheeler, Patrick C.}, year={2023}, month=mar, pages={103–114} }"
+    }
+  ],
+  "contributingPapers": [
+    {
+      "title": "Injuries in Athletics (Track and Field): A Narrative Review Presenting the Current Problem of Injuries",
+      "authors": ["Pascal Edouard", "Pierre-Eddy Dandrieux", "Spyridon Iatropoulos", "David Blanco", "Pedro Branco", "Joris Chapon", "Davie Mulenga", "Kenny Guex", "Gael Guilhem", "Jenny Jacobsson", "Robert Mann", "Ciara McCallion", "Constance Mosser", "Jean-Benoit Morin", "Caroline Prince", "Alexis Ruffault", "Toomas Timpka", "Juan-Manuel Alonso", "Yuka Tsukahara", "Laurent Navarro", "Karsten Hollander"],
+      "year": 2024,
+      "journal": "German Journal of Sports Medicine",
+      "doi": "https://doi.org/10.5960/dzsm.2024.601",
+      "pdf": "papers/contributing/Edouard 2024 GJSM Injuries in Athletics (Track and Field) A Narrative Review Presenting the problem of injuries.pdf",
+      "code": null,
+      "bibtex": "@article{2024, title={Injuries in Athletics (Track and Field): A Narrative Review Presenting the Current Problem of Injuries}, volume={75}, url={http://dx.doi.org/10.5960/dzsm.2024.601}, DOI={10.5960/dzsm.2024.601}, number={4}, journal={Deutsche Zeitschrift für Sportmedizin}, publisher={Deutsche Zeitschrift Fur Sportmedizin/German Journal of Sports Medicine}, author={Edouard, Pascal and Dandrieux, Pierre-Eddy and Iatropoulos, Spyridon and Blanco, David and Branco, Pedro and Chapon, Joris and Mulenga, Davie and Guex, Kenny and Guilhem, Gael and Jacobsson, Jenny and Mann, Robert and McCallion, Ciara and Mosser, Constance and Morin, Jean-Benoit and Prince, Caroline and Ruffault, Alexis and Timpka, Toomas and Alonso, Juan-Manuel and Tsukahara, Yuka and Navarro, Laurent and Hollander, Karsten}, year={2024}, month=jun, pages={132–141} }"
+    }
+  ]
+}

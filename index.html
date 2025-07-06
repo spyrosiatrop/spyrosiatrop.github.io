@@ -9,50 +9,65 @@
 <body>
   <header>
     <h1>Spyros Iatropoulos MD, MSc</h1>
-    <p>Medical doctor | Researcher | Developer | Sports Medicine | Injury Prevention | Artificial Intelligence</p>
+    <p>Sports Medicine | Data Analysis</p>
     <nav>
-      <a href="#research">Research</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="research">
-      <h2>Research Publications</h2>
-      <ul>
-        <li>
-          <strong>Paper Title 1</strong><br />
-          <em>Conference/Journal, Year</em><br />
-          <a href="link-to-paper.pdf" target="_blank">PDF</a> |
-          <a href="https://doi.org/xxxxx">DOI</a>
-          <a href="">Code</a>
-        </li>
-        <li>
-          <strong>Paper Title 2</strong><br />
-          <em>Conference/Journal, Year</em><br />
-          <a href="link-to-paper.pdf" target="_blank">PDF</a> |
-          <a href="https://doi.org/yyyyy">DOI</a>
-          <a href="">Code</a>
-        </li>
-      </ul>
-    </section>
-
+<!-- About section -->
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a [position] at [institution], working on [your field]. My work focuses on [short research summary].</p>
+      <p>I am PhD(y)ing at the University Jean Monnet in Saint-Etienne, working on sports injury risk reduction with a focus on Athletics (Track and Field). 
+        My work focuses on how to integrate Education, Exercise programmes, Psychological techniques and Artificial Intelligence to successfully reduce the athletes' injury risk.</p>
     </section>
 
+<!-- Research section organised in first author papers and co-author articles-->
+    <section id="research">
+    <h2>Research Publications</h2>
+
+    <h3>Leading Papers</h3>
+    <div id="leading-papers"></div>
+
+    <h3>Contributing Papers</h3>
+    <div id="contributing-papers"></div>
+    </section>
+
+    <!-- Load the JS at the bottom -->
+    <script src="papers.js"></script>
+
+<!-- Contact section -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
-      <p><a href="https://scholar.google.com/citations?user=XXXX" target="_blank">Google Scholar</a></p>
+      <p><a href="mailto:spyridon.iatropoulos@univ-st-etienne.fr">spyridon.iatropoulos@univ-st-etienne.fr</a></p>
+        <div class="profile-links">
+          <a href="https://x.com/spyros_iatrop" target="_blank">
+            <img src="images/x_twitter.png" alt="X" style="height:24px;">
+          </a>
+          <a href="https://scholar.google.com/citations?user=L7z5QlEAAAAJ&hl=en&oi=sra" target="_blank">
+            <img src="images/google_scholar.png" alt="Google Scholar" style="height:24px;">
+          </a>
+          <a href="https://www.researchgate.net/profile/Spyros-Iatropoulos-2?ev=hdr_xprf" target="_blank">
+            <img src="images/researchgate.png" alt="Research Gate" style="height:24px;">
+          </a>
+        </div>
+      </p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Spyros Iatropoulos</p>
   </footer>
+
+<!-- BibTeX Modal -->
+<div id="bibtex-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center;">
+  <div style="background:#fff;padding:1em;max-width:90vw;max-height:80vh;overflow:auto;position:relative;">
+    <button onclick="document.getElementById('bibtex-modal').style.display='none'" style="position:absolute;top:0.5em;right:0.5em;">Close</button>
+    <pre id="bibtex-content" style="white-space:pre-wrap;"></pre>
+  </div>
+</div>
 </body>
 </html>

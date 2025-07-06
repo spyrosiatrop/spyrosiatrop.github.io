@@ -41,3 +41,12 @@ footer {
   background-color: #2c3e50;
   color: white;
 }
+
+.profile-links {
+  display: flex;
+  gap: 1em;
+}
+
+.profile-links a {
+  white-space: nowrap;
+}
