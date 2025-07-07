@@ -4,11 +4,56 @@
       "title": "Hamstring muscle injuries in athletics",
       "authors": ["Spyridon A. Iatropoulos", "Patrick C. Wheeler"],
       "year": 2023,
+      "published": "2023-03",
       "journal": "The Physician and Sportsmedicine",
       "doi": "https://doi.org/10.1080/00913847.2023.2188871",
-      "pdf": "papers/leading/Iatropoulos & Wheeler (2023) Hamstring muscle injuries in athletics.pdf", 
+      "pdf": "papers/leading/Iatropoulos_2024_PhysSpMed.pdf", 
       "code": null,
       "bibtex": "@article{Iatropoulos_2023, title={Hamstring muscle injuries in athletics}, volume={52}, ISSN={2326-3660}, url={http://dx.doi.org/10.1080/00913847.2023.2188871}, DOI={10.1080/00913847.2023.2188871}, number={2}, journal={The Physician and Sportsmedicine}, publisher={Informa UK Limited}, author={Iatropoulos, Spyridon A. and Wheeler, Patrick C.}, year={2023}, month=mar, pages={103–114} }"
+    },
+    {
+      "title": "The Dose–Response Relationship of an Exercise‐Based Injury Prevention Program: A Secondary Analysis of a Randomized Controlled Trial on Athletics (Track‐and‐Field) Athletes Over a 39‐Week Follow‐Up",
+      "authors": ["Spyridon Iatropoulos", "Pierre-Eddy Dandrieux", "Laurent Navarro", "David Blanco", "Pascal Edouard"],
+      "year": 2024,
+      "published": "2024-09",
+      "journal": "Scandinavian Journal of Medicine & Science in Sports",
+      "doi": "https://doi.org/10.1111/sms.14720",
+      "pdf": "papers/leading/Iatropoulos_2024_SJMSS.pdf", 
+      "code": null,
+      "bibtex": "@article{Iatropoulos_2024, title={The Dose–Response Relationship of an Exercise‐Based Injury Prevention Program: A Secondary Analysis of a Randomized Controlled Trial on Athletics (Track‐and‐Field) Athletes Over a 39‐Week Follow‐Up}, volume={34}, ISSN={1600-0838}, url={http://dx.doi.org/10.1111/sms.14720}, DOI={10.1111/sms.14720}, number={9}, journal={Scandinavian Journal of Medicine &amp; Science in Sports}, publisher={Wiley}, author={Iatropoulos, Spyridon and Dandrieux, Pierre‐Eddy and Navarro, Laurent and Blanco, David and Edouard, Pascal}, year={2024}, month=sep }"
+    }, 
+    {
+      "title": "Effect of an unsupervised multidomain intervention integrating education, exercises, psychological techniques and machine learning feedback, on injury risk reduction in athletics (track and field): protocol of a randomised controlled trial (I-ReductAI)",
+      "authors": ["Spyridon Iatropoulos", "Pierre-Eddy Dandrieux", "David Blanco", "Alexis Ruffault", "Estelle Gignoux", "Constance Mosser", "Karsten Hollander", "Laurent Navarro", "Pascal Edouard"],
+      "year": 2025,
+      "published": "2025-01",
+      "journal": "BMJ Open Sport & Exercise Medicine",
+      "doi": "https://doi.org/10.1136/bmjsem-2025-002501",
+      "pdf": "papers\\leading\\Iatropoulos_2025_BOSEM_protocol.pdf",
+      "code": null,
+      "bibtex": "@article{Iatropoulos_2025, title={Effect of an unsupervised multidomain intervention integrating education, exercises, psychological techniques and machine learning feedback, on injury risk reduction in athletics (track and field): protocol of a randomised controlled trial (I-ReductAI)}, volume={11}, ISSN={2055-7647}, url={http://dx.doi.org/10.1136/bmjsem-2025-002501}, DOI={10.1136/bmjsem-2025-002501}, number={1}, journal={BMJ Open Sport &amp; Exercise Medicine}, publisher={BMJ}, author={Iatropoulos, Spyridon and Dandrieux, Pierre-Eddy and Blanco, David and Ruffault, Alexis and Gignoux, Estelle and Mosser, Constance and Hollander, Karsten and Navarro, Laurent and Edouard, Pascal}, year={2025}, month=jan, pages={e002501} }"
+    },
+    {
+      "title": "Development and internal validation of machine learning prognostic models of sports injuries using self-reported data in athletics (track and field): The influence of quantity and quality of features",
+      "authors": ["Spyridon Iatropoulos", "Pierre-Eddy Dandrieux", "Pascal Edouard", "Laurent Navarro"],
+      "year": 2025,
+      "published": "2025-06",
+      "journal": "Journal of Sports Sciences",
+      "doi": "https://doi.org/10.1080/02640414.2025.2517971",
+      "pdf": "papers\\leading\\Iatropoulos_2025_JSS.pdf",
+      "code": "https://github.com/spyrosiatrop/ML_Injury_Prediction_Prevathle_RCT",
+      "bibtex": "@article{Iatropoulos_2025, title={Development and internal validation of machine learning prognostic models of sports injuries using self-reported data in athletics (track and field): The influence of quantity and quality of features}, ISSN={1466-447X}, url={http://dx.doi.org/10.1080/02640414.2025.2517971}, DOI={10.1080/02640414.2025.2517971}, journal={Journal of Sports Sciences}, publisher={Informa UK Limited}, author={Iatropoulos, Spyridon and Dandrieux, Pierre-Eddy and Edouard, Pascal and Navarro, Laurent}, year={2025}, month=jun, pages={1–15} }"
+    }, 
+    {
+      "title": "The ‘vicious circle’ of sports injuries: an analysis of 165 athletics (track and field) athletes over a 39-week follow-up using Markov chains",
+      "authors": ["Spyridon Iatropoulos", "Pascal Edouard"],
+      "year": 2025,
+      "published": "2025-04",
+      "journal": "BMJ Open Sport & Exercise Medicine",
+      "doi": "https://doi.org/10.1136/bmjsem-2024-002420",
+      "pdf": "papers\\leading\\Iatropoulos_2025_BOSEM_vicious.pdf",
+      "code": "https://github.com/spyrosiatrop/Vicious_circle_of_injuries_Markov_chain_analysis",
+      "bibtex": "@article{Iatropoulos_2025, title={The ‘vicious circle’ of sports injuries: an analysis of 165 athletics (track and field) athletes over a 39-week follow-up using Markov chains}, volume={11}, ISSN={2055-7647}, url={http://dx.doi.org/10.1136/bmjsem-2024-002420}, DOI={10.1136/bmjsem-2024-002420}, number={2}, journal={BMJ Open Sport &amp; Exercise Medicine}, publisher={BMJ}, author={Iatropoulos, Spyridon and Edouard, Pascal}, year={2025}, month=apr, pages={e002420} }"
     }
   ],
   "contributingPapers": [
@@ -16,11 +61,45 @@
       "title": "Injuries in Athletics (Track and Field): A Narrative Review Presenting the Current Problem of Injuries",
       "authors": ["Pascal Edouard", "Pierre-Eddy Dandrieux", "Spyridon Iatropoulos", "David Blanco", "Pedro Branco", "Joris Chapon", "Davie Mulenga", "Kenny Guex", "Gael Guilhem", "Jenny Jacobsson", "Robert Mann", "Ciara McCallion", "Constance Mosser", "Jean-Benoit Morin", "Caroline Prince", "Alexis Ruffault", "Toomas Timpka", "Juan-Manuel Alonso", "Yuka Tsukahara", "Laurent Navarro", "Karsten Hollander"],
       "year": 2024,
+      "published": "2024-06",
       "journal": "German Journal of Sports Medicine",
       "doi": "https://doi.org/10.5960/dzsm.2024.601",
-      "pdf": "papers/contributing/Edouard 2024 GJSM Injuries in Athletics (Track and Field) A Narrative Review Presenting the problem of injuries.pdf",
+      "pdf": "papers/contributing/Edouard_2024_GJSM.pdf",
       "code": null,
       "bibtex": "@article{2024, title={Injuries in Athletics (Track and Field): A Narrative Review Presenting the Current Problem of Injuries}, volume={75}, url={http://dx.doi.org/10.5960/dzsm.2024.601}, DOI={10.5960/dzsm.2024.601}, number={4}, journal={Deutsche Zeitschrift für Sportmedizin}, publisher={Deutsche Zeitschrift Fur Sportmedizin/German Journal of Sports Medicine}, author={Edouard, Pascal and Dandrieux, Pierre-Eddy and Iatropoulos, Spyridon and Blanco, David and Branco, Pedro and Chapon, Joris and Mulenga, Davie and Guex, Kenny and Guilhem, Gael and Jacobsson, Jenny and Mann, Robert and McCallion, Ciara and Mosser, Constance and Morin, Jean-Benoit and Prince, Caroline and Ruffault, Alexis and Timpka, Toomas and Alonso, Juan-Manuel and Tsukahara, Yuka and Navarro, Laurent and Hollander, Karsten}, year={2024}, month=jun, pages={132–141} }"
+    },
+    {
+      "title": "Educating and promoting athletes’ health protection through infographics on injury and illness prevention during an international competition: a prospective study during the 2024 European Athletics Championships",
+      "authors": ["Pascal Edouard", "Spyridon Iatropoulos", "Laurent Navarro", "Pedro Branco", "Karsten Hollander", "Pierre-Eddy Dandrieux"],
+      "year": 2024,
+      "published": "2024-09",
+      "journal": "BMJ Open Sport & Exercise Medicine",
+      "doi": "https://doi.org/10.1136/bmjsem-2024-002162",
+      "pdf": "papers\\contributing\\Edouard_2024_BOSEM.pdf",
+      "code": null,
+      "bibtex": "@article{Edouard_2024, title={Educating and promoting athletes’ health protection through infographics on injury and illness prevention during an international competition: a prospective study during the 2024 European Athletics Championships}, volume={10}, ISSN={2055-7647}, url={http://dx.doi.org/10.1136/bmjsem-2024-002162}, DOI={10.1136/bmjsem-2024-002162}, number={3}, journal={BMJ Open Sport &amp; Exercise Medicine}, publisher={BMJ}, author={Edouard, Pascal and Iatropoulos, Spyridon and Navarro, Laurent and Branco, Pedro and Hollander, Karsten and Dandrieux, Pierre-Eddy}, year={2024}, month=sep, pages={e002162} }"
+    },
+    {
+      "title": "Association between the use of daily injury risk estimation feedback (I-REF) based on machine learning techniques and injuries in athletics (track and field): results of a prospective cohort study over an athletics season",
+      "authors": ["Pierre-Eddy Dandrieux", "Laurent Navarro", "David Blanco", "Alexis Ruffault", "Christophe Ley", "Antoine Bruneau", "Spyridon Iatropoulos", "Joris Chapon", "Karsten Hollander", "Pascal Edouard"],
+      "year": 2025,
+      "published": "2025-02",
+      "journal": "BMJ Open Sport & Exercise Medicine",
+      "doi": "https://doi.org/10.1136/bmjsem-2024-002331",
+      "pdf": "papers\\contributing\\Dandrieux_2025_BOSEM.pdf",
+      "code": null,
+      "bibtex": "@article{Dandrieux_2025, title={Association between the use of daily injury risk estimation feedback (I-REF) based on machine learning techniques and injuries in athletics (track and field): results of a prospective cohort study over an athletics season}, volume={11}, ISSN={2055-7647}, url={http://dx.doi.org/10.1136/bmjsem-2024-002331}, DOI={10.1136/bmjsem-2024-002331}, number={1}, journal={BMJ Open Sport &amp; Exercise Medicine}, publisher={BMJ}, author={Dandrieux, Pierre-Eddy and Navarro, Laurent and Blanco, David and Ruffault, Alexis and Ley, Christophe and Bruneau, Antoine and Iatropoulos, Spyridon (Spyros) and Chapon, Joris and Hollander, Karsten and Edouard, Pascal}, year={2025}, month=feb, pages={e002331} }"
+    }, 
+    {
+      "title": "National Medical Teams during European Athletics Championships from 2009 To 2024: Composition, Gender Distribution, and Influence on Team Performance",
+      "authors": ["Pascal Edouard", "Spyridon Iatropoulos", "Karolina Velebova", "Ciara McCallion", "Marianna Kiss", "Pierre-Eddy Dandrieux", "Pedro Branco", "Jane Thornton", "Karsten Hollander"],
+      "year": 2025,
+      "published": "2025-05",
+      "journal": "Sports Medicine - Open",
+      "doi": "https://doi.org/10.1186/s40798-025-00864-3",
+      "pdf": "papers\\contributing\\Edouard_2025_SpMed_Open.pdf",
+      "code": null,
+      "bibtex": "@article{Edouard_2025, title={National Medical Teams during European Athletics Championships from 2009 To 2024: Composition, Gender Distribution, and Influence on Team Performance}, volume={11}, ISSN={2198-9761}, url={http://dx.doi.org/10.1186/s40798-025-00864-3}, DOI={10.1186/s40798-025-00864-3}, number={1}, journal={Sports Medicine - Open}, publisher={Springer Science and Business Media LLC}, author={Edouard, Pascal and Iatropoulos, Spyridon and Velebova, Karolina and McCallion, Ciara and Kiss, Marianna and Dandrieux, Pierre-Eddy and Branco, Pedro and Thornton, Jane and Hollander, Karsten}, year={2025}, month=may }"
     }
   ]
 }

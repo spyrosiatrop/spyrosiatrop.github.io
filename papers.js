@@ -16,7 +16,18 @@ fetch('data/papers.json')
  * @param {Array} fields - array of metadata keys to display in order
  */
 function loadAndRenderPapers(papers, targetId, fields) {
-  papers.sort((a, b) => b.year - a.year);
+  // Sort by 'published' (descending), fallback to 'year' if 'published' is missing
+  papers.sort((a, b) => {
+    if (a.published && b.published) {
+      return b.published.localeCompare(a.published);
+    } else if (a.published) {
+      return -1;
+    } else if (b.published) {
+      return 1;
+    } else {
+      return (b.year || 0) - (a.year || 0);
+    }
+  });
 
   const container = document.getElementById(targetId);
   container.innerHTML = '';  // clear existing content
@@ -32,7 +43,7 @@ function loadAndRenderPapers(papers, targetId, fields) {
     // Second line: Author names (space separated, no label)
     let authorsLine = '';
     if (paper.authors && Array.isArray(paper.authors)) {
-      authorsLine = `<div style="font-size: smaller;">
+      authorsLine = `<div style="font-size: smaller; margin-bottom: 0.7em;">
     ${
       paper.authors
         .map(name =>
@@ -47,16 +58,16 @@ function loadAndRenderPapers(papers, targetId, fields) {
 
     // Collect links for one-line display
     let links = [];
-    if (paper.doi) links.push(`<a href="${paper.doi}" target="_blank">DOI</a>`);
-    if (paper.pdf) links.push(`<a href="${paper.pdf}" target="_blank">PDF</a>`);
-    if (paper.code) links.push(`<a href="${paper.code}" target="_blank">Code</a>`);
+    if (paper.doi) links.push(`<a href="${paper.doi}" target="_blank" class="paper-btn">DOI</a>`);
+    if (paper.pdf) links.push(`<a href="${paper.pdf}" target="_blank" class="paper-btn">PDF</a>`);
+    if (paper.code) links.push(`<a href="${paper.code}" target="_blank" class="paper-btn">Code</a>`);
     if (paper.bibtex) {
-      links.push(`<a href="#" onclick="showBibtex(\`${paper.bibtex.replace(/`/g, '\\`')}\`);return false;">BibTeX</a>`);
+      links.push(`<a href="#" class="paper-btn" onclick="showBibtex(\`${paper.bibtex.replace(/`/g, '\\`')}\`);return false;">BibTeX</a>`);
     }
 
     let linksLine = '';
     if (links.length > 0) {
-      linksLine = `<div>${links.join(' | ')}</div>`;
+      linksLine = `<div style="margin-bottom: 0.7em; display: flex; gap: 0.5em;">${links.join('')}</div>`;
     }
 
     // Other fields (skip doi, pdf, code, bibtex, title, year, journal, authors)
