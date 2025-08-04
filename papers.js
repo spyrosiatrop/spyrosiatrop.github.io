@@ -2,11 +2,11 @@
 fetch('data/papers.json')
   .then(res => res.json())
   .then(data => {
-    // Example: show title, year, and pdf link only for leading papers
-    loadAndRenderPapers(data.leadingPapers, "leading-papers", ["title", "authors", "year", "doi", "pdf", "code", "bibtex"]);
+    // Example: show only for leading papers
+    loadAndRenderPapers(data.leadingPapers, "leading-papers", ["title", "authors", "year", "journal", "link", "code", "bibtex"]);
     
     // Example: show full info for contributing papers
-    loadAndRenderPapers(data.contributingPapers, "contributing-papers", ["title", "authors", "year", "journal", "doi", "pdf", "code", "bibtex"]);
+    loadAndRenderPapers(data.contributingPapers, "contributing-papers", ["title", "authors", "year", "journal", "link", "code", "bibtex"]);
   });
 
 /**
@@ -56,12 +56,13 @@ function loadAndRenderPapers(papers, targetId, fields) {
   </div>`;
     }
 
-    // Collect links for one-line display
+    // Collect links based on fields array
     let links = [];
-    if (paper.doi) links.push(`<a href="${paper.doi}" target="_blank" class="paper-btn">DOI</a>`);
-    if (paper.pdf) links.push(`<a href="${paper.pdf}" target="_blank" class="paper-btn">PDF</a>`);
-    if (paper.code) links.push(`<a href="${paper.code}" target="_blank" class="paper-btn">Code</a>`);
-    if (paper.bibtex) {
+
+    if (fields.includes('link') && paper.link !== null) links.push(`<a href="${paper.link}" target="_blank" class="paper-btn">Link</a>`);
+    if (fields.includes('pdf') && paper.pdf !== null) links.push(`<a href="${paper.pdf}" target="_blank" class="paper-btn">PDF</a>`);
+    if (fields.includes('code') && paper.code !== null) links.push(`<a href="${paper.code}" target="_blank" class="paper-btn">Code</a>`);
+    if (fields.includes('bibtex')) {
       links.push(`<a href="#" class="paper-btn" onclick="showBibtex(\`${paper.bibtex.replace(/`/g, '\\`')}\`);return false;">BibTeX</a>`);
     }
 
@@ -70,17 +71,10 @@ function loadAndRenderPapers(papers, targetId, fields) {
       linksLine = `<div style="margin-bottom: 0.7em; display: flex; gap: 0.5em;">${links.join('')}</div>`;
     }
 
-    // Other fields (skip doi, pdf, code, bibtex, title, year, journal, authors)
-    let otherFields = '';
-    fields.forEach(field => {
-      if (!['title', 'year', 'journal', 'authors', 'doi', 'pdf', 'code', 'bibtex'].includes(field) && paper[field]) {
-        otherFields += `<p>${paper[field]}</p>`;
-      }
-    });
-
-    article.innerHTML = `${firstLine}${authorsLine}${linksLine}${otherFields}`;
+    // Set the article content
+    article.innerHTML = `${firstLine}${authorsLine}${linksLine}`;
     container.appendChild(article);
-});
+  });
 }
 
 // Add this function at the end of your JS file:
