@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research - Spyros Iatropoulos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Spyros Iatropoulos MD, MSc</h1>
+    <p>Sports Medicine | Data Analysis</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="research">
+      <h2>Research Publications</h2>
+
+      <h3><u>Leading Papers</u></h3>
+      <div id="leading-papers"></div>
+
+      <h3><u>Contributing Papers</u></h3>
+      <div id="contributing-papers"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Spyros Iatropoulos</p>
+  </footer>
+
+  <!-- Load the JS at the bottom -->
+  <script src="papers.js"></script>
+
+  <!-- BibTeX Modal -->
+  <div id="bibtex-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);z-index:1000;align-items:center;justify-content:center;">
+    <div style="background:#fff;padding:1em;max-width:90vw;max-height:80vh;overflow:auto;position:relative;">
+      <button onclick="document.getElementById('bibtex-modal').style.display='none'" style="position:absolute;top:0.5em;right:0.5em;">Close</button>
+      <pre id="bibtex-content" style="white-space:pre-wrap;"></pre>
+    </div>
+  </div>
+</body>
+</html>
