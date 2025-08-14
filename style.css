@@ -47,7 +47,7 @@ nav a.active:hover {
 
 main {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 800px; /* Back to original width for consistent sections */
   margin: auto;
 }
 
@@ -90,9 +90,8 @@ footer {
 
 .profile-links {
   display: flex;
-  gap: 1em;
-  flex-direction: column;
-  align-items: flex-start;
+  gap: 1rem;
+  align-items: center;
 }
 
 .profile-links a {
@@ -100,6 +99,11 @@ footer {
   align-items: center;
   gap: 0.5em;
   text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.profile-links a:hover {
+  transform: translateY(-3px);
 }
 
 .paper-btn {
@@ -120,11 +124,22 @@ footer {
 
 /* CV Styles */
 .cv-section {
-  margin: 2rem 0;
+  margin: 0; /* Remove individual section margins */
   padding: 1.5rem;
   background: #f9f9f9;
   border-radius: 8px;
   border-left: 4px solid #007acc;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+/* Hover effect - zoom, shadow and slide left */
+.cv-section:hover {
+  transform: scale(1.02) translateX(-20px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .cv-section h3 {
@@ -152,6 +167,11 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+.cv-header p.cv-institution {
+  margin: 0;
+  flex: 1;
+}
+
 .cv-header h4 {
   margin: 0;
   color: #333;
@@ -177,6 +197,7 @@ footer {
 .cv-description {
   margin: 0.5rem 0 0 0;
   line-height: 1.6;
+  text-align: left;
 }
 
 .cv-publication {
@@ -207,6 +228,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .skill-item {
@@ -240,13 +262,31 @@ footer {
   color: #555;
 }
 
-/* About page intro paragraph styling */
+/* About page intro paragraph styling - remove box styling */
 #about > p:first-of-type {
   font-style: italic;
   font-size: 1.2em;
   line-height: 1.6;
   margin-bottom: 2rem;
   color: #555;
+  /* Remove all box styling */
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  border-left: none;
+}
+
+/* Contact row layout */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-row p {
+  margin: 0;
+  flex: 1;
 }
 
 /* Responsive */
@@ -259,5 +299,80 @@ footer {
   
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+  
+  main {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  
+  .cv-wrapper {
+    margin: 0 50px; /* Reduce margins on mobile */
+  }
+  
+  .cv-wrapper:hover .left-img {
+    transform: translateX(-50px) scale(1);
+  }
+  
+  .cv-wrapper:hover .right-img {
+    transform: translateX(100px) scale(1); /* Reduce movement on mobile */
+  }
+}
+
+.cv-wrapper {
+  position: relative;
+  display: block;
+  overflow: visible; /* Allow images to extend beyond wrapper */
+  margin: 2rem 0; /* Only vertical margins, no horizontal */
+  width: 100%; /* Full width of main container */
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  opacity: 0;
+  z-index: 0;
+}
+
+.left-img {
+  right: 0%; /* Start from the right edge of the section */
+  transform: translateX(100%) scale(0.8); /* Start completely hidden behind section */
+  mask: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,1) 100%);
+  -webkit-mask: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,1) 100%);
+}
+
+.right-img {
+  left: 95%; /* Position very close to the right edge of the section */
+  transform: translateX(0) scale(0.8); /* Start at the edge, not hidden behind */
+  mask: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0) 100%);
+  -webkit-mask: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 70%, rgba(0,0,0,0) 100%);
+}
+
+.cv-wrapper:hover .hover-image {
+  opacity: 1;
+  z-index: 10;
+}
+
+.cv-wrapper:hover .left-img {
+  transform: translateX(-150px) scale(1); /* Move even further outward */
+}
+
+.cv-wrapper:hover .right-img {
+  transform: translateX(50px) scale(1); /* Move just 50px to the right instead of 200px */
+}
+
+/* Adjust main container for mobile */
+@media (max-width: 768px) {
+  main {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  
+  .cv-wrapper:hover .right-img {
+    transform: translateX(100px) scale(1); /* Reduce movement on mobile */
   }
 }

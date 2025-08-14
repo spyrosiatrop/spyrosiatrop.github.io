@@ -1,5 +1,5 @@
 {
-  "leadingPapers": [
+  "papers": [
     {
       "title": "Hamstring muscle injuries in athletics",
       "authors": ["Spyridon A. Iatropoulos", "Patrick C. Wheeler"],
@@ -54,9 +54,7 @@
       "pdf": "papers/leading/Iatropoulos_2025_BOSEM_vicious.pdf",
       "code": "https://github.com/spyrosiatrop/Vicious_circle_of_injuries_Markov_chain_analysis",
       "bibtex": "@article{Iatropoulos_2025, title={The 'vicious circle' of sports injuries: an analysis of 165 athletics (track and field) athletes over a 39-week follow-up using Markov chains}, volume={11}, ISSN={2055-7647}, url={http://dx.doi.org/10.1136/bmjsem-2024-002420}, DOI={10.1136/bmjsem-2024-002420}, number={2}, journal={BMJ Open Sport &amp; Exercise Medicine}, publisher={BMJ}, author={Iatropoulos, Spyridon and Edouard, Pascal}, year={2025}, month=apr, pages={e002420} }"
-    }
-  ],
-  "contributingPapers": [
+    },
     {
       "title": "Injuries in Athletics (Track and Field): A Narrative Review Presenting the Current Problem of Injuries",
       "authors": ["Pascal Edouard", "Pierre-Eddy Dandrieux", "Spyridon Iatropoulos", "David Blanco", "Pedro Branco", "Joris Chapon", "Davie Mulenga", "Kenny Guex", "Gael Guilhem", "Jenny Jacobsson", "Robert Mann", "Ciara McCallion", "Constance Mosser", "Jean-Benoit Morin", "Caroline Prince", "Alexis Ruffault", "Toomas Timpka", "Juan-Manuel Alonso", "Yuka Tsukahara", "Laurent Navarro", "Karsten Hollander"],
