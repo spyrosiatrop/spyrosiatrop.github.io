@@ -98,6 +98,17 @@
       "pdf": "papers/contributing/Edouard_2025_SpMed_Open.pdf",
       "code": null,
       "bibtex": "@article{Edouard_2025, title={National Medical Teams during European Athletics Championships from 2009 To 2024: Composition, Gender Distribution, and Influence on Team Performance}, volume={11}, ISSN={2198-9761}, url={http://dx.doi.org/10.1186/s40798-025-00864-3}, DOI={10.1186/s40798-025-00864-3}, number={1}, journal={Sports Medicine - Open}, publisher={Springer Science and Business Media LLC}, author={Edouard, Pascal and Iatropoulos, Spyridon and Velebova, Karolina and McCallion, Ciara and Kiss, Marianna and Dandrieux, Pierre-Eddy and Branco, Pedro and Thornton, Jane and Hollander, Karsten}, year={2025}, month=may }"
+    }, 
+    {
+      "title": "The Dose–Response Relationship of Exercise-Based Injury Prevention Programmes: Implications for Research and Practice",
+      "authors": ["Spyridon Iatropoulos", "Pierre-Eddy Dandrieux", "Laurent Navarro", "David Blanco", "Pascal Edouard"],
+      "year": 2025,
+      "published": "2025-08",
+      "journal": "Sports Medicine",
+      "link": "https://doi.org/10.1007/s40279-025-02298-z",
+      "pdf": null,
+      "code": null,
+      "bibtex": "@article{Iatropoulos_2025, title={The Dose–Response Relationship of Exercise-Based Injury Prevention Programmes: Implications for Research and Practice}, ISSN={1179-2035}, url={http://dx.doi.org/10.1007/s40279-025-02298-z}, DOI={10.1007/s40279-025-02298-z}, journal={Sports Medicine}, publisher={Springer Science and Business Media LLC}, author={Iatropoulos, Spyridon and Dandrieux, Pierre-Eddy and Navarro, Laurent and Blanco, David and Edouard, Pascal}, year={2025}, month=aug }"
     }
   ]
 }
