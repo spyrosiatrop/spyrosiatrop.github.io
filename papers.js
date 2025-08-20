@@ -34,47 +34,45 @@ function loadAndRenderPapers(papers, targetId, fields) {
   container.innerHTML = '';  // clear existing content
 
   papers.forEach(paper => {
-    const article = document.createElement('article');
-
-    // First line: [title], [year] - [journal]
-    let firstLine = `<strong>${paper.title || ''}</strong>`;
-    if (paper.year) firstLine += `, ${paper.year}`;
-    if (paper.journal) firstLine += ` – <em>${paper.journal}</em>`;
-
-    // Second line: Author names (space separated, no label)
-    let authorsLine = '';
-    if (paper.authors && Array.isArray(paper.authors)) {
-      authorsLine = `<div style="font-size: smaller; margin-bottom: 0.7em;">
-        ${
-          paper.authors
-            .map(name =>
-              name.includes('Iatropoulos')
-                ? `<b>${name}</b>`
-                : name
-            )
-            .join(', ')
-        }
-      </div>`;
-    }
-
+    // Create CV wrapper and section for each paper
+    const cvWrapper = document.createElement('div');
+    cvWrapper.className = 'cv-wrapper';
+    
     // Collect links based on fields array
     let links = [];
-
-    if (fields.includes('link') && paper.link && paper.link !== null) links.push(`<a href="${paper.link}" target="_blank" class="paper-btn">Link</a>`);
-    if (fields.includes('pdf') && paper.pdf && paper.pdf !== null) links.push(`<a href="${paper.pdf}" target="_blank" class="paper-btn">PDF</a>`);
-    if (fields.includes('code') && paper.code && paper.code !== null) links.push(`<a href="${paper.code}" target="_blank" class="paper-btn">Code</a>`);
+    if (fields.includes('link') && paper.link && paper.link !== null) links.push(`<a href="${paper.link}" target="_blank" class="paper-link">Link</a>`);
+    if (fields.includes('pdf') && paper.pdf && paper.pdf !== null) links.push(`<a href="${paper.pdf}" target="_blank" class="paper-link">PDF</a>`);
+    if (fields.includes('code') && paper.code && paper.code !== null) links.push(`<a href="${paper.code}" target="_blank" class="paper-link">Code</a>`);
     if (fields.includes('bibtex') && paper.bibtex) {
-      links.push(`<a href="#" class="paper-btn" onclick="showBibtex(\`${paper.bibtex.replace(/`/g, '\\`')}\`);return false;">BibTeX</a>`);
+      links.push(`<a href="#" class="paper-link" onclick="showBibtex(\`${paper.bibtex.replace(/`/g, '\\`')}\`);return false;">BibTeX</a>`);
     }
 
-    let linksLine = '';
-    if (links.length > 0) {
-      linksLine = `<div style="margin-bottom: 0.7em; display: flex; gap: 0.5em; flex-wrap: wrap;">${links.join('')}</div>`;
+    // Format authors with bold for Iatropoulos
+    let authorsDisplay = '';
+    if (paper.authors && Array.isArray(paper.authors)) {
+      authorsDisplay = paper.authors
+        .map(name => name.includes('Iatropoulos') ? `<b>${name}</b>` : name)
+        .join(', ');
     }
 
-    // Set the article content
-    article.innerHTML = `${firstLine}${authorsLine}${linksLine}`;
-    container.appendChild(article);
+    // Format title with year and journal
+    const titleWithYear = `${paper.title || ''}, ${paper.year || ''} - ${paper.journal || ''}`;
+
+    cvWrapper.innerHTML = `
+      <div class="cv-section">
+        <div class="paper-content">
+          <h4 class="paper-title">${titleWithYear}</h4>
+          <div class="paper-authors">${authorsDisplay}</div>
+          <div class="paper-info">
+            <div class="paper-links">
+              ${links.join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    container.appendChild(cvWrapper);
   });
 }
 

@@ -14,60 +14,29 @@
   <title>Newsletter - Spyros Iatropoulos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Spyros Iatropoulos MD, MSc</h1>
-    <p>Sports Medicine | Data Analysis</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
-      <a href="newsletter.html" class="active">Newsletter</a>
-    </nav>
-  </header>
+<body data-page="newsletter">
+  <div id="header-container"></div>
 
   <main>
-    <div class="newsletter-container">
-      <section id="newsletter">
-        <h2>Newsletter</h2>
-        <p style="font-style: italic; font-size: 1.2em; line-height: 1.6; margin-bottom: 2rem; color: #555;">
-          Stay updated with my latest research, insights on sports medicine, and data analysis discoveries.
-        </p>
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+      <p>Stay updated with the latest research and advances in sports medicine, injury prevention, and data analysis.</p>
 
+      <div class="newsletter-container">
         <div class="subscribe-form">
-          <h3>Join My Newsletter</h3>
-          <p>Get monthly insights on injury prevention, sports medicine innovations, and data-driven athletic performance.</p>
+          <h3>Join my Newsletter for free</h3>
           
-          <form id="newsletter-form">
-            <div class="form-group">
-              <input 
-                type="email" 
-                id="email-input"
-                class="email-input" 
-                placeholder="Enter your email address" 
-                required
-              />
-              <button type="submit" class="submit-btn">Count me in</button>
-            </div>
-          </form>
-          
-          <div id="success-message" class="success-message">
-            Thanks! You're now subscribed to my newsletter.
-          </div>
-          
-          <div id="error-message" class="error-message">
-            Something went wrong. Please try again.
+          <!-- Substack official embed -->
+          <div class="substack-embed">
+            <iframe src="https://spyrosiatropoulos.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>    
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Spyros Iatropoulos</p>
-  </footer>
+  <div id="footer-container"></div>
 
-  <script src="newsletter.js"></script>
+  <script src="header.js"></script>
 </body>
 </html>
