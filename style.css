@@ -289,7 +289,88 @@ footer {
   flex: 1;
 }
 
-/* Responsive */
+/* Newsletter page styles */
+.newsletter-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.subscribe-form {
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-form:hover {
+  transform: scale(1.02) translateX(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.email-input {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+}
+
+.submit-btn {
+  padding: 1rem 2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 150px;
+}
+
+.submit-btn:hover {
+  background-color: #005c99;
+  transform: translateY(-1px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.success-message {
+  display: none;
+  color: #28a745;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.error-message {
+  display: none;
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .cv-header {
     flex-direction: column;
@@ -316,6 +397,15 @@ footer {
   
   .cv-wrapper:hover .right-img {
     transform: translateX(100px) scale(1); /* Reduce movement on mobile */
+  }
+  
+  .form-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .email-input {
+    min-width: 100%;
   }
 }
 
