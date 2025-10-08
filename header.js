@@ -1,3 +1,32 @@
+function createHeadElements() {
+  return `
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XVTGEY33B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5XVTGEY33B');
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#2c3e50">
+    <meta name="theme-color" content="#2c3e50">
+    
+    <link rel="stylesheet" href="style.css" />
+  `;
+}
+
 function createHeader(activePage) {
   return `
     <header>
@@ -19,7 +48,10 @@ function createHeader(activePage) {
       </nav>
     </header>
     
-    <!-- Mobile navigation overlay -->
+    <!-- Mobile navigation backdrop -->
+    <div class="nav-backdrop" id="mobile-backdrop" onclick="closeMobileMenu()"></div>
+    
+    <!-- Mobile navigation slide-in panel -->
     <div class="nav-overlay" id="mobile-nav">
       <nav>
         <a href="index.html" ${activePage === 'home' ? 'class="active"' : ''} onclick="closeMobileMenu()">Home</a>
@@ -43,9 +75,11 @@ function createFooter() {
 // Mobile menu functions
 function toggleMobileMenu() {
   const overlay = document.getElementById('mobile-nav');
+  const backdrop = document.getElementById('mobile-backdrop');
   const button = document.querySelector('.menu-toggle');
   
   overlay.classList.toggle('active');
+  backdrop.classList.toggle('active');
   button.classList.toggle('active');
   
   // Prevent body scroll when menu is open
@@ -54,9 +88,11 @@ function toggleMobileMenu() {
 
 function closeMobileMenu() {
   const overlay = document.getElementById('mobile-nav');
+  const backdrop = document.getElementById('mobile-backdrop');
   const button = document.querySelector('.menu-toggle');
   
   overlay.classList.remove('active');
+  backdrop.classList.remove('active');
   button.classList.remove('active');
   document.body.style.overflow = '';
 }
