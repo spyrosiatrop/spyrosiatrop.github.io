@@ -119,6 +119,16 @@
     "pdf": null, 
     "code": null, 
     "bibtex": "@article{Girard_2025, title={Évaluation de l’« exercise fidelity » et de l’effet des feedbacks sur l’évolution de l’« exercise fidelity » lors de la réalisation d’exercices de renforcement musculaire à visée préventive chez des athlètes}, ISSN={0762-915X}, url={http://dx.doi.org/10.1016/j.jts.2025.07.005}, DOI={10.1016/j.jts.2025.07.005}, journal={Journal de Traumatologie du Sport}, publisher={Elsevier BV}, author={Girard, Nicolas and Iatropoulos, Spyridon and Edouard, Pascal}, year={2025}, month=aug }"
+    }, 
+    {"title": "Prevalence, incidence and characteristics of musculoskeletal injuries in Athletics (track and field): a systematic review and meta-analysis", 
+    "authors": ["Pascal Edouard", "Yuka Tsukahara", "Robert H Mann", "Nicolas de Neve", "Toomas Timpka", "Spyridon Iatropoulos", "David Blanco", "Pierre-Eddy Dandrieux", "Jenny Jacobsson", "Constance Mosser", "Jane S Thornton", "Pedro Branco", "Tim Hoenig", "Karsten Hollander"],
+    "year": 2026,
+    "published": "2026-02", 
+    "journal": "British Journal of Sports Medicine", 
+    "link": "https://doi.org/10.1136/bjsports-2025-110541", 
+    "pdf": null, 
+    "code": null,
+    "bibtex": "@article{Edouard_2026, title={Prevalence, incidence and characteristics of musculoskeletal injuries in Athletics (track and field): a systematic review and meta-analysis}, ISSN={1473-0480}, url={http://dx.doi.org/10.1136/bjsports-2025-110541}, DOI={10.1136/bjsports-2025-110541}, journal={British Journal of Sports Medicine}, publisher={BMJ}, author={Edouard, Pascal and Tsukahara, Yuka and Mann, Robert H and de Neve, Nicolas and Timpka, Toomas and Iatropoulos, Spyridon and Blanco, David and Dandrieux, Pierre-Eddy and Jacobsson, Jenny and Mosser, Constance and Thornton, Jane S and Branco, Pedro and Hoenig, Tim and Hollander, Karsten}, year={2026}, month=feb, pages={bjsports-2025-110541} }"
     }
 
   ]
