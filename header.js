@@ -30,7 +30,7 @@ function createHeadElements() {
 function createHeader(activePage) {
   return `
     <header>
-      <h1>Spyros Iatropoulos MD, MSc</h1>
+      <h1>Spyros Iatropoulos MD, MSc, PhD</h1>
       <p>Sports Medicine | Data Analysis</p>
       
       <!-- Hamburger menu button (mobile only) -->
